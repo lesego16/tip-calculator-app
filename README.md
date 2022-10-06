@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/lesego16/tip-calculator-app)
-- Live Site URL: [Add live site URL here](https://lesego16.github.io/tip-calculator-app/)
+- Solution URL: [https://github.com/lesego16/tip-calculator-app](https://github.com/lesego16/tip-calculator-app)
+- Live Site URL: [https://lesego16.github.io/tip-calculator-app/](https://lesego16.github.io/tip-calculator-app/)
 
 ## My process
 
@@ -45,8 +45,7 @@ Users should be able to:
 
 ### What I learned
 
-1.What I learned especially on the JavaScript part is being able to remove
-an active class on a button that was previously clicked.
+1.What I learned especially on the JavaScript part is being able to remove an active class on a button that was previously clicked.
 2.I also learn how to iterate through item in an HTML document using a forEach loop
 
 ```js
