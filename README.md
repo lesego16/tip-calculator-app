@@ -41,8 +41,6 @@ Users should be able to:
 - CSS Grid
 - Vanilla JavaScript
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
 ### What I learned
 
 1.What I learned especially on the JavaScript part is being able to remove an active class on a button that was previously clicked.
