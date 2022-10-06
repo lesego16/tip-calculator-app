@@ -9,7 +9,6 @@ const tip_amount_per_person_digit = document.getElementById(
 const buttons = document.querySelectorAll(".btn");
 const reset_btn = document.getElementById("resetBtn");
 let prevButton = null;
-const tip_calculator = document.querySelectorAll("tip_calculator");
 
 buttons.forEach((button) =>
   button.addEventListener("click", button_calculation, false)
