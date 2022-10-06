@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="logo">
+          <h1>spli<br />tter</h1>
+        </div>
+
+        <div class="tip_calculator_wrapper" id="tip_calculator">
+          <div class="media_query_container">
+            <div class="media_query_row">
+              <div class="group">
+                <label for="bill_input">Bill</label>
+                <i class="icon-dollar">
+                  <img alt="dollar_icon" src="images/icon-dollar.svg" />
+                </i>
+                <input
+                  type="number"
+                  name="bill_input"
+                  min="0"
+                  max="100"
+                  placeholder="0"
+                  class="light input"
+                  id="bill_input"
+                />
+              </div>
+              <span class="label">Select Tip %</span>
+              <div class="grid" id="tip_buttons">
+                <input type="button" class="btn" value="5%" />
+                <input type="button" class="btn" value="10%" />
+                <input type="button" class="btn" value="15%" />
+                <input type="button" class="btn" value="25%" />
+                <input type="button" class="btn" value="50%" />
+                <input
+                  type="number"
+                  name="custom_input"
+                  class="light input"
+                  id="custom_input"
+                  placeholder="Custom"
+                />
+              </div>
+              <div class="group">
+                <div class="space-between">
+                  <label for="num_of_people">Number of People</label>
+                  <label id="error_message"></label>
+                </div>
+
+                <i class="icon-dollar">
+                  <img alt="person_icon" src="images/icon-person.svg" />
+                </i>
+                <input
+                  type="number"
+                  name="num_of_people"
+                  placeholder="0"
+                  class="light_two input"
+                  id="num_of_people"
+                />
+              </div>
+            </div>
+            <div class="media_query_row">
+              <div class="display_results_box">
+                <div class="flex">
+                  <div class="flex_item">
+                    <div class="space-between margin-bottom">
+                      <p>
+                        <span class="heading">Tip Amount</span><br />
+                        <span class="label">/ person</span>
+                      </p>
+                      <span class="digit">
+                        <span id="tip_amount_per_person">$0.00</span></span
+                      >
+                    </div>
+                    <div class="space-between">
+                      <p>
+                        <span class="heading">Total</span><br /><span
+                          class="label"
+                        >
+                          / person</span
+                        >
+                      </p>
+                      <span class="digit">
+                        <span id="total_per_person">$0.00</span></span
+                      >
+                    </div>
+                  </div>
+                  <div class="flex_item flex_end">
+                    <input
+                      type="button"
+                      value="Reset"
+                      class="btn_reset disabled"
+                      id="resetBtn"
+                      disabled
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Lesego</a>.
+        </div>
+      </div>
+    </main>
+
+    <script src="Javascript/index.js"></script>
+  </body>
+</html>

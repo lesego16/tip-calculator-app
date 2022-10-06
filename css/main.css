@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+:root {
+  --Strongcyan: hsl(172, 67%, 45%);
+  --Very-dark-cyan: hsl(183, 100%, 15%);
+  --Dark-grayish-cyan: hsl(186, 14%, 43%);
+  --Grayish-cyan: hsl(184, 14%, 56%);
+  --Light-grayish-cyan: hsl(185, 41%, 84%);
+  --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+  --font-family: "Space Mono", monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+h1 {
+  color: var(--Dark-grayish-cyan);
+  letter-spacing: 9px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+.label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+input {
+  height: 2.2rem;
+  border: none;
+  border-radius: 0.25rem;
+  width: 100%;
+  font-family: var(--font-family);
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  font-family: var(--font-family);
+  line-height: 1.5;
+  color: var(--Grayish-cyan);
+  background-color: var(--Light-grayish-cyan);
+  min-height: 100vh;
+}
+
+.logo {
+  margin-bottom: 2rem;
+  text-align: center;
+  pointer-events: none;
+}
+
+.tip_calculator_wrapper {
+  width: 100%;
+  padding-right: 2.3rem;
+  padding-left: 2.3rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 0.938rem;
+  background-color: #fff;
+}
+
+.btn {
+  background-color: var(--Very-dark-cyan);
+  color: var(--White);
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--Light-grayish-cyan);
+  color: var(--Very-dark-cyan);
+}
+
+.active {
+  background-color: var(--Strongcyan);
+  color: var(--Very-dark-cyan);
+}
+
+.btn_reset {
+  background-color: var(--Strongcyan);
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn_reset:hover {
+  background-color: var(--Light-grayish-cyan);
+}
+
+.heading {
+  color: var(--White);
+  font-size: 0.8rem;
+}
+
+.label {
+  font-size: 0.8rem;
+}
+
+.digit {
+  font-size: 2rem;
+  color: var(--Strongcyan);
+}
+
+.group {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1.563rem;
+  display: flex;
+  flex-direction: column;
+}
+
+i {
+  position: absolute;
+  top: 2.375rem;
+  left: 0.938rem;
+  pointer-events: none;
+}
+
+.grid {
+  width: 100%;
+  margin-bottom: 1.563rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.9em;
+}
+
+.success {
+  outline: none;
+  border: 2px solid var(--Strongcyan);
+}
+
+.error {
+  outline: none;
+  border: 2px solid rgb(235, 76, 76);
+}
+
+#error_message {
+  color: rgb(235, 76, 76);
+}
+
+.light {
+  background-color: var(--Very-light-grayish-cyan);
+  text-align: right;
+  padding-right: 1.25rem;
+  font-size: 1.5rem;
+  color: var(--Very-dark-cyan);
+  cursor: pointer;
+}
+
+.light_two {
+  background-color: var(--Very-light-grayish-cyan);
+  text-align: right;
+  padding-right: 1.25rem;
+  font-size: 1.5rem;
+  color: var(--Very-dark-cyan);
+}
+
+.light:hover {
+  border: 2px solid var(--Strongcyan);
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.display_results_box {
+  background-color: var(--Very-dark-cyan);
+  padding: 1.6rem;
+  border-radius: 8px;
+}
+
+.margin-bottom {
+  margin-bottom: 1.5rem;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.attribution {
+  margin-top: 2rem;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  body {
+    overflow-y: hidden;
+  }
+
+  i {
+    top: 2.688rem;
+  }
+
+  .digit {
+    font-size: 3rem;
+  }
+
+  input {
+    height: 3rem;
+  }
+
+  .media_query_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.7em;
+  }
+
+  .tip_calculator_wrapper {
+    width: 51.25rem;
+  }
+
+  .display_results_box {
+    height: 100%;
+  }
+
+  .flex {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex_end {
+    transform: translateY(110%);
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
