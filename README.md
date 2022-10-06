@@ -46,7 +46,7 @@ Users should be able to:
 ### What I learned
 
 1.What I learned especially on the JavaScript part is being able to remove
-an active class on a button that was previously clicked
+an active class on a button that was previously clicked.
 2.I also learn how to iterate through item in an HTML document using a forEach loop
 
 ```js
